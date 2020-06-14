@@ -5,6 +5,7 @@ import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
+import javafx.scene.image.Image;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
@@ -32,6 +33,8 @@ public class UISearchResult extends UI{
         rootPanel.getChildren().add(wagonChainView);
         rootPanel.getChildren().add(bottomPanel);
         primaryStage.setScene(new Scene(rootPanel, 300, 250));
+        Image image = new Image(getClass().getResourceAsStream("/Search.png"));
+        primaryStage.getIcons().add(image);
         primaryStage.setWidth(300);
         primaryStage.show();
 
